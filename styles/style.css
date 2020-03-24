@@ -19,8 +19,8 @@
   }
 
 .logo{
-    background-image: url(../images/logo.svg);
-    }
+}
+
 .logo__place_header {
     width: 183px;
     height: 32px;
@@ -133,8 +133,7 @@
     margin-bottom: 30px;
     font-size: 24px;
     line-height: 34px;
-    color: #000;
-     
+    color: #000;     
 }
 
 .two-columns__paragraph:nth-of-type(3n) {
@@ -182,6 +181,7 @@
     line-height: 34px;
     text-align: center;
     margin-top: 0px;
+    color: #000;
 }
 
 .table {
@@ -195,30 +195,32 @@
     justify-content: flex-start;
 }
 
-.cell {
+.table__cell {
     display: block;
     width: 250px;
     margin: auto;
     margin-top: 0px;
 }
 
-.cell:nth-child(-n+4) {
+.table__cell:nth-child(-n+4) {
     padding-bottom: 60px;
 }
 
-.cell__heading {
+.table__heading {
     font-size: 24px;
     line-height: 1.15;
     font-weight: bolder;
     margin: auto;
     margin-top: 0px;
     margin-bottom: 20px;
+    color: #000;
 }
 
-.cell__text {
+.table__text {
     font-size: 18px;
     line-height: 1.2;
     font-weight: normal;
+    color: #000;
 }
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
@@ -226,5 +228,52 @@
     color: white;
     margin-right: 0;
     margin-top: 80px;
+}
+
+.feinman {
+    height: 790px;
+    margin-top: 100px;
+    background-color: #F2F2F2;
+    position: relative;
+    background-image: url(../images/feinman.png);
+    background-repeat: no-repeat;
+    background-size: 867px 637px;
+    background-position: bottom 0px left 0px;
+    z-index: 0;
+}
+
+.feinman__title {
+    display: block;
+    width: 648px;
+    font-weight: bold;
+    font-size: 120px;
+    line-height: 1.15;
+    text-align: center;
+    margin: auto;
+    margin-top: 0px;
+
+    
+}
+
+.feinman__subtitle {
+    display: block;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.feinman__link {
+    position: absolute;
+    top: 345px; 
+    right: 0;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #000; 
 }
 
