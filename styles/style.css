@@ -16,6 +16,7 @@
   /* выше установили ограничения для секции */
   background-color: #F2F2F2;
   position: relative;
+  z-index: 2;
   }
 
  .logo {
@@ -29,37 +30,33 @@
     left: 64px;
 }
 
-.title {
+.header__title {
     width: 730px;
     height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 64px;
-}
-
-.header__title {
+    margin-top: 0px;
     line-height: 102px;
     font-size: 102px;
     font-weight: bold;
     z-index: 2;
-
 }
 
-.subtitle {
+
+.header__subtitle{
     width: 388px;
     position: absolute;
     bottom: 30px;
     left: 64px;
     z-index: 2;
-}
-
-.header__subtitle{
     list-style: 25px;
     font-size: 18px;
 }
 
-.subtitle__link {
+.header__link {
+    color: #2F80ED;
     text-decoration: none;
 }
 
@@ -69,7 +66,7 @@
     position: absolute;
     bottom: 0px;
     right: 0px;
-    z-index: 1;
+    z-index: -1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -81,12 +78,13 @@
     right: 0px;
     top: 64px;
     bottom: 0px;
+    z-index: -2;
 }
 
 .content {
     position: relative;
     margin: 0 0%;
-    background-color: #F2F2F2;
+    background-color: #fff;
 }
 
 .description {
@@ -95,7 +93,7 @@
     padding-top: 100px;
     padding-bottom: 100px;
     width: 80%;
-}
+    }
 
 .two-columns {
     display: flex;
@@ -112,6 +110,7 @@
     max-width: 20%;
     margin-top: 0px;
     font-size: 18px;
+    font-weight: normal;
     line-height: 1.2;
     color: #2F80ED;
 }
@@ -136,7 +135,7 @@
     color: #000;     
 }
 
-.two-columns__paragraph:nth-of-type(3n) {
+.two-columns__paragraph:last-of-type {
     margin-bottom: 0px;
 }
 
@@ -200,7 +199,7 @@
     margin-top: 0px;
 }
 
-.table__cell:nth-child(-n+4) {
+.table__cell_position:nth-child(-n+4) {
     padding-bottom: 60px;
     padding-top: 60px;
 }
@@ -258,8 +257,8 @@
 
 .feinman__link {
     position: absolute;
-    top: 345px; 
-    right: 0;
+    top: 50%; 
+    right: 48px;
     font-weight: normal;
     font-size: 36px;
     line-height: 51px;
@@ -286,9 +285,10 @@
     top: 0px;
     right: -210px;
     bottom: 0px;
+    z-index: 0;
 }
 
-.section-title__theme_dark {
+.section-title_theme_dark {
     display: block;
     width: 60%;
     margin: auto;
@@ -297,10 +297,10 @@
     line-height: 69px;
     text-align: center;
     color: #F2F2F2;
-    z-index: 2;
+    z-index: 1;
 }
 
-.section-subtitle__theme_dark {
+.section-subtitle_theme_dark {
     display: block;
     font-size: 24px;
     line-height: 34px;
@@ -310,7 +310,7 @@
 
 }
 
-.table__theme_dark {
+.table_theme_dark {
     display: flex;
     width: 1100px;
     margin: auto;
@@ -322,19 +322,18 @@
     z-index: 2;
 }
 
-.table__cell__theme_dark {
+.table__cell_theme_dark {
     display: block;
     width: 200px;
-    margin: auto;
     z-index: 2;
 }
 
-.table__cell__theme_dark:nth-child(-n+5) {
+.table__cell_theme_dark:nth-child(-n+5) {
     margin-top: 80px;
     margin-bottom: 80px;
 }
 
-.table__heading__theme_dark {
+.table__heading_theme_dark {
     display: block;
     margin-top: 0px;
     margin-bottom: 20px;
@@ -344,7 +343,7 @@
     z-index: 2;
 }
 
-.table__text__theme_dark {
+.table__text_theme_dark {
     display: block;
     margin: 0px auto;
     font-size: 18px;
@@ -362,7 +361,7 @@
     background-color: #1F1F1F ; 
 }
 
-.footer__column {
+.footer__columns {
     width: 90%;
     display: flex;
     margin: auto;
@@ -372,17 +371,18 @@
     justify-content: space-between;
 }
 
-.footer__column__content_copyright {
-    display: flex;
+.footer__columns_content_copyright {
     flex-basis: 711px;
-    height: 250px;
+    min-height: 250px;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: flex-start;
     justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
-.logo__place_footer {
+.logo_place_footer {
     position: relative;
     left: 0px;
     top: 0px;
@@ -402,7 +402,7 @@
     color: #F2F2F2;
 }
 
-.footer__column__content_info {
+.footer__column_content_info {
     display: block;
     padding-bottom: 18px;
     }
@@ -416,7 +416,7 @@
     color: #F2F2F2;
 }
 
-.footer__column-link {
+.footer__column-links {
     display: block;
     margin: 0px 0px;
     padding:0px 0px;
@@ -429,13 +429,12 @@
     color: #F2F2F2;
 }
     
-.footer__column__content-social {
+.footer__column_content-social {
     display: block;
     padding-bottom: 18px;
 }
 
 .footer__social-icon {
-    display: block;
     width: 16px;
     height: 16px;
     margin-right: 10px;
