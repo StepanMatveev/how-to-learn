@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url(/blocks/content/content.css);
 @import url(/blocks/description/description.css);
 @import url(/blocks/digits/digits.css);
@@ -16,3 +17,6 @@
 @import url(/blocks/techniques/);
 @import url(/blocks/two-columns/two-columns.css);
 @import url(/blocks/video/);
+=======
+@import url(./blocks/page/page.css);
+>>>>>>> df02a8e31bd68cae89b2c03ea86de70b0967919e

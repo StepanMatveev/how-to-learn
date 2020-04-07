@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 @import url(./_content/footer__column_content_copyright.css);
 @import url(./_content/footer__column_content_info.css);
 @import url(./_content/footer__column_content_social.css);
+=======
+>>>>>>> df02a8e31bd68cae89b2c03ea86de70b0967919e
 .footer__column {
     position: relative;
 }
