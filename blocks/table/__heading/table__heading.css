@@ -1,0 +1,10 @@
+@import url(./_theme/table__heading_theme_dark.css);
+.table__heading {
+    font-size: 24px;
+    line-height: 1.15;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #000;
+}
