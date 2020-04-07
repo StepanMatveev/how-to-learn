@@ -1,0 +1,12 @@
+.table__cell_theme_dark {
+    width: 200px;
+    z-index: 2;
+}
+
+.table__cell_theme_dark:nth-child(-n+5) {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    /*я не знаю как по другому убрать наследование первого псевдоселектора, надеюсь это не костыли*/
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
