@@ -1,15 +1,7 @@
-<<<<<<< HEAD
 @import url(./__link/header__link.css);
 @import url(./__title/header__title.css);
 @import url(./__subtitle/header__subtitle.css);
 @import url(./__main-illustration/header__main-illustration.css);
-=======
-@import url(/blocks/logo/logo.css);
-@import url(./header/__link/header__link.css);
-@import url(./__title/header__title.css);
-@import url(./__subtitle/header__subtitle.css);
-@import url(./main-illustration/header__main-illustration.css);
->>>>>>> df02a8e31bd68cae89b2c03ea86de70b0967919e
 @import url(./__square-pic/header__square-pic.css);
 .header {
     height: 100vh;
