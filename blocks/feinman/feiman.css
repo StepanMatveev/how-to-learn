@@ -3,7 +3,7 @@
 @import url(./__title/feinman__title.css);
 .feinman {
     height: 790px;
-    padding-top: 100px;
+    padding-top: 80px;
     background-color: #F2F2F2;
     position: relative;
     background-image: url(/images/feinman.png);

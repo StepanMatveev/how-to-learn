@@ -8,4 +8,9 @@
     vertical-align: middle;
     text-decoration: none;
     color: #000; 
+    transition: opacity .1s linear;
 }
+
+.feinman__link:hover {
+    opacity: 0.5;
+} 
