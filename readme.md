@@ -9,9 +9,12 @@
 * HTML5
 * CSS3
 
+### Ссылка
+[https://stepanmatveev.github.io/how-to-learn/index.html](https://stepanmatveev.github.io/how-to-learn/index.html)
+
 
 ### Разработчик
 Матвеев Степан
 
 
-** Проект разработан в качестве самостоятельной работы для [YandexPraktikum](https://praktikum.yandex.ru/). 
+**Проект разработан в качестве самостоятельной работы для [YandexPraktikum](https://praktikum.yandex.ru/). 
